@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="style.css" />
+	<title>Formulaires</title>
+</head>
+<body>
+	<form method="post" action="traitement.php">
+		<fieldset id="ID">
+			<legend id="IDL">Votre Identité</legend>
+			<p><label>1. Nom</label> : <input type="text" name="Nom" placeholder="Nom" /> <br/>
+			<label>2. Prénom</label> : <input type="text" name="Prénom" placeholder="Prénom" /><br/>
+			<label>3. Adresse email</label> : <input type="text" name="Email" placeholder="Adresse mail" /></p>
+		</fieldset>
+	</form>
+	<form method="post" action="traitement.php">
+		<fieldset id="LV">
+			<legend id="LVL">Adresse de livraison</legend>
+			<p><label for="Adresse"></label>1. Adresse<textarea name="Adresse" id="Adresse" rows="5" cols="30"></textarea><br/>
+			<label>2. Code Postal</label> : <input type="text" name="Code Postal" placeholder="Code Postal" /><br/>
+			<label>3. Ville</label> : <input type="text" name="Ville" placeholder="Ville" /></p>
+		</fieldset>
+	</form>
+	<form method="post" action="traitement.php">
+		<fieldset id="RE">
+			<legend id="REL">Informations de réglement</legend>
+			<p>1. Type de Carte bancaire<br/>
+			<div id="CR"><input type="radio" name="VISA" value="VISA" id="VISA" /> <label for="VISA">VISA</label><br />
+			<input type="radio" name="Mastercard" value="Mastercard" id="Mastercard" /> <label for="Mastercard">Mastercard</label></div><br/>
+			<label>2. Numéro de carte</label>  : <input type="text" name="Numéro de carte" placeholder="Numéro de carte" /><br/>
+			<label>3. Code sécurité</label>    : <input type="text" name="Code sécurité" placeholder="Code sécurité" /><br/>
+			<label>4. Nom du titulaire</label> : <input type="text" name="Nom du titulaire" placeholder="Nom du titulaire" /></p>
+		</fieldset>
+	</form>
+	<input type="submit" value="J'achète !" />
+</body>
+</html>
